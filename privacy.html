@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Cavault Privacy Policy</title>
   <style>
-    /* Load a pixelated system font fallback */
     @font-face {
       font-family: "Chicago";
       src: local("Chicago"), local("Monaco"), local("Courier New"), monospace;
     }
-
     body {
       background: #C0C0C0;
       margin: 0;
@@ -19,7 +17,6 @@
       font-size: 14px;
       color: #000;
     }
-
     .window {
       width: 100%;
       max-width: 600px;
@@ -28,7 +25,6 @@
       background: #E0E0E0;
       box-shadow: 4px 4px 0 #808080;
     }
-
     .titlebar {
       display: flex;
       align-items: center;
@@ -38,44 +34,27 @@
       padding: 0 4px;
       border-bottom: 2px solid #000;
     }
-
-    .titlebar .buttons {
-      display: flex;
-      gap: 4px;
-    }
-
-    .titlebar .btn {
-      width: 12px;
-      height: 12px;
-      background: #FF0000;
+    .buttons { display: flex; gap: 4px; }
+    .btn {
+      width: 12px; height: 12px;
       border: 1px solid #000;
     }
-    .titlebar .btn.min { background: #FFFF00; }
-    .titlebar .btn.max { background: #00FF00; }
-
-    .titlebar .title {
-      flex: 1;
-      text-align: center;
-      font-weight: bold;
-    }
-
+    .btn.close { background: #FF0000; }
+    .btn.min   { background: #FFFF00; }
+    .btn.max   { background: #00FF00; }
+    .title { flex: 1; text-align: center; font-weight: bold; }
     .content {
       padding: 12px;
       line-height: 1.4;
       background: #FFF;
       border-top: 2px solid #808080;
     }
-
     .content h2 {
       margin: 1em 0 0.5em;
       font-size: 16px;
       text-decoration: underline;
     }
-
-    .content p {
-      margin: 0.5em 0;
-    }
-
+    .content p { margin: 0.5em 0; }
     footer {
       margin-top: 12px;
       text-align: center;
@@ -87,34 +66,37 @@
   <div class="window">
     <div class="titlebar">
       <div class="buttons">
-        <div class="btn close" role="button" aria-label="Close"></div>
-        <div class="btn min" role="button" aria-label="Minimize"></div>
-        <div class="btn max" role="button" aria-label="Zoom"></div>
+        <div class="btn close"></div>
+        <div class="btn min"></div>
+        <div class="btn max"></div>
       </div>
       <div class="title">Cavault Privacy Policy</div>
-      <div style="width:40px"></div><!-- spacer -->
+      <div style="width:40px"></div>
     </div>
 
     <div class="content">
-      <p><strong>Last updated:</strong> July 19, 2025</p>
+      <p><strong>Last updated:</strong> July 20, 2025</p>
 
-      <h2>Data Storage</h2>
-      <p>Cavault stores sensitive data (cards, PINs, passwords) only on your device using Apple’s Keychain. No sensitive data is ever sent to the internet.</p>
+      <h2>Our Commitment</h2>
+      <p>Cavault is built on a “data-never-leaves-your-device” principle. We do not—and will never—collect, transmit, or store your sensitive information on any server.</p>
 
-      <h2>No Internet</h2>
-      <p>The app is fully offline—your data never leaves your device.</p>
+      <h2>We Store Nothing</h2>
+      <p>All card details, PINs, passwords, and bank details are encrypted and kept exclusively in Apple’s Keychain. Only non-sensitive labels (e.g. name: “My Visa ****1234”) are stored in app storage locally.</p>
 
-      <h2>No Tracking</h2>
-      <p>We don’t collect analytics or use any tracking frameworks. Your usage stays private.</p>
+      <h2>How We Protect It</h2>
+      <p>Apple’s Keychain provides hardware‑level encryption. Every piece of data is encrypted at rest, and only unlocked when you authenticate via Face ID or your passcode.</p>
 
-      <h2>Backups</h2>
-      <p>To back up, use encrypted local iPhone backups via Finder (macOS) or iTunes (Windows).</p>
+      <h2>No Third‑Party & No Tracking</h2>
+      <p>Cavault does not include any analytics, ads, or tracking libraries. We don’t use Crashlytics, Google Analytics, or any SDK that collects usage data. Your activity is 100% private.</p>
 
-      <h2>Permissions</h2>
-      <p>Face ID/Touch ID is used only locally for unlocking; we don’t store or transmit biometric data.</p>
+      <h2>Offline‑First & No Backups</h2>
+      <p>The app functions fully offline—no internet connection is required. We do not support any backups as of now for extreme protection if requested will be supported future on optional basis.</p>
 
-      <h2>Support</h2>
-      <p>Questions? Email <a href="mailto:support@cavault.app">support@cavault.app</a>.</p>
+      <h2>You Control Everything</h2>
+      <p>You decide what stays on your device. You can delete individual entries or wipe the entire vault at any time—and all encrypted data will be permanently removed.</p>
+
+      <h2>Questions & Support</h2>
+      <p>If you have any concerns, email us at <a href="mailto:tdheisenbug@gmail.com">support@cavault.app</a>. We respond promptly and transparently.</p>
     </div>
   </div>
 
